@@ -1,28 +1,12 @@
-== README
+Healthcare Professionals
+========================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Une application permettant d'afficher une liste de professionnels de sante.
 
-Things you may want to cover:
+Un professionnel de sante est defini par:
 
-* Ruby version
+* Un nom
+* un prenom
+* une adresse
+* une specialite
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

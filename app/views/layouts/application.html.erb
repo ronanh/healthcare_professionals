@@ -13,11 +13,11 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-      	<%= link_to "Healthcare Professionals", '#', id: "logo" %>
+      	<%= link_to "Healthcare Professionals", root_path, 'data-no-turbolink' => true, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   root_path %></li>
-            <li><%= link_to "Manage",   healthcare_professionals_path %></li>
+            <li><%= link_to "Home",   root_path, 'data-no-turbolink' => true %></li>
+            <li><%= link_to "Manage", healthcare_professionals_path %></li>
           </ul>
         </nav>
       </div>

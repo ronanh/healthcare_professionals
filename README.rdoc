@@ -1,0 +1,15 @@
+Healthcare Professionals
+========================
+
+Une application permettant d'afficher sur une carte des marqueurs permettand de localiser des professionnels de sante.
+En cliquant sur un marqueur, on accede aux infos du professionnel. Un lien 'show' permet d'acceder aux details...
+
+Un professionnel de sante est defini par:
+
+* Un nom
+* un prenom
+* une adresse
+* une specialite
+
+
+Le lien 'Manage' permet de gerer les professionnels de sante...
