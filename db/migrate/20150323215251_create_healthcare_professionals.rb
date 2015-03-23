@@ -1,6 +1,6 @@
-class CreateHealtcareProfessionals < ActiveRecord::Migration
+class CreateHealthcareProfessionals < ActiveRecord::Migration
   def change
-    create_table :healtcare_professionals do |t|
+    create_table :healthcare_professionals do |t|
       t.string :firstname
       t.string :lastname
       t.string :speciality

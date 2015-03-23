@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150323215251) do
 
-  create_table "healtcare_professionals", force: :cascade do |t|
+  create_table "healthcare_professionals", force: :cascade do |t|
     t.string   "firstname"
     t.string   "lastname"
     t.string   "speciality"

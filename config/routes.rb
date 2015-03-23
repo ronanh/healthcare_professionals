@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :healthcare_professionals
+
   root 'static_pages#home'
   get 'static_pages/home'
 
