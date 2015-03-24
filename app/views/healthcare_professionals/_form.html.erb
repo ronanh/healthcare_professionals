@@ -1,33 +1,38 @@
-<%= form_for(@healthcare_professional) do |f| %>
-  <% if @healthcare_professional.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@healthcare_professional.errors.count, "error") %> prohibited this healthcare_professional from being saved:</h2>
+<%= form_for @healthcare_professional, :html => { :class => 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> Healthcare Professional</legend>
 
-      <ul>
-      <% @healthcare_professional.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <div class="control-group">
+      <%= f.label :firstname, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :firstname, :class => 'text_field' %>
+      </div>
     </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :firstname %><br>
-    <%= f.text_field :firstname %>
-  </div>
-  <div class="field">
-    <%= f.label :lastname %><br>
-    <%= f.text_field :lastname %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :speciality %><br>
-    <%= f.text_field :speciality %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="control-group">
+      <%= f.label :lastname, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :lastname, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :address, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :address, :class => 'text_field', :size=>"30" %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :speciality, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :speciality, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', healthcare_professionals_path, :class => 'btn' %>
+    </div>
+  </fieldset>
 <% end %>

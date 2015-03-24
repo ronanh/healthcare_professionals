@@ -2,7 +2,7 @@
 
 <h1>Listing Healthcare Professionals</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>First name</th>
@@ -20,9 +20,9 @@
         <td><%= healthcare_professional.lastname %></td>
         <td><%= healthcare_professional.address %></td>
         <td><%= healthcare_professional.speciality %></td>
-        <td><%= link_to 'Show', healthcare_professional %></td>
-        <td><%= link_to 'Edit', edit_healthcare_professional_path(healthcare_professional) %></td>
-        <td><%= link_to 'Destroy', healthcare_professional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', healthcare_professional, :class => 'btn btn-mini' %></td>
+        <td><%= link_to 'Edit', edit_healthcare_professional_path(healthcare_professional), :class => 'btn btn-mini' %></td>
+        <td><%= link_to 'Destroy', healthcare_professional, :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Healthcare professional', new_healthcare_professional_path %>
+<%= link_to 'New Healthcare professional', new_healthcare_professional_path, :class => 'btn btn-primary' %>
